@@ -29,6 +29,8 @@ int main()
 
 
 	cout << "Test Finished";
+	cout << "Test Finished";
+	cout << "Test Finished";
 
 
 
