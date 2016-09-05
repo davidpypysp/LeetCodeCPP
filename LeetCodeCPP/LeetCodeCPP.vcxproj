@@ -149,6 +149,7 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="313.cpp" />
     <ClCompile Include="350.cpp" />
     <ClCompile Include="666.cpp" />
     <ClCompile Include="LeetCodeCPP.cpp" />

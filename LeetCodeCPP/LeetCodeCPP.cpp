@@ -8,24 +8,28 @@ using namespace std;
 
 
 #include<vector>
+#include<queue>
+
 #include "350.cpp"
 
 
 
+template<typename T> void print_queue(T& q) {
+	while (!q.empty()) {
+		cout << q.top() << " ";
+		q.pop();
+	}
+	cout << endl;
+}
+
 int main()
 {
 
-	int arr[] = { 13,24,15,16 };
-	int len = sizeof(arr);
+	priority_queue<int> q;
+	for (int n : {1, 8, 5, 6, 3, 4, 0, 9, 7, 2}) {
+		q.push(n);
+	}
 
-	vector<int> nums1;
-	nums1.push_back(13);
-	nums1.push_back(15);
-	nums1.push_back(16);
-	nums1.push_back(176);
-	vector<int> nums2(arr, arr + sizeof(arr) / sizeof(int));
-	Solution s;
-	vector<int> v = s.intersect(nums1, nums2);
 
 
 	cout << "Test Finished";
